@@ -5,7 +5,7 @@ const { serviceAccount, databaseURL } = require('../../../credentials/firebase.j
 firebase.initializeApp({
     credential: firebase.credential.cert(serviceAccount),
     databaseURL
-}), 'appCheck';
+}, 'appCheck');
 
 const appCheck = firebase.appCheck();
 
